@@ -1,5 +1,5 @@
 ---
-- hosts: localhost
+- hosts: all
   tasks:
   - name: ensure kibana is running
     service: name=kibana state=started
