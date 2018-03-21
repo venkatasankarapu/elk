@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  tasks:
+  - name: ensure kibana is running
+    service: name=kibana state=started
+  - name: ensure logstash is running
+    service: name=logstash state=started
+  - name: ensure elasticsearch is running
+    service: name=elasticsearch state=started
+  - name: ensure ansible is running
+    service: name=ansible state=started
+
