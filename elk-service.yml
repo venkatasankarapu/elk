@@ -1,8 +1,5 @@
 ---
 - hosts: localhost
-  become: true
-  become_user: vs178y
-  become_method: sudo
   tasks:
   - name: test connection
     command: systemctl status kibana
