@@ -1,8 +1,5 @@
 ---
-- hosts: all
+- hosts: localhost
   tasks:
-  - name: Create file
-        file:
-            path: /tmp/yallo
-            state: touch
-
+  - name: test connection
+    ping:
