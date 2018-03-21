@@ -1,6 +1,8 @@
 ---
-- hosts: all
+- hosts: hostB
   tasks:
-  - name: ensure ansible is running
-    service: name=logstash state=started
+  - name: Create file
+        file:
+            path: /tmp/yallo
+            state: touch
 
